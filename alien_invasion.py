@@ -19,22 +19,22 @@ def run_game():
       ai_settings.screen_height = screen.get_rect().height
       pygame.display.set_caption("Alien Invasion")	
       
-      # Make the Play button.
+      # Made the Play button.
       play_button = Button(ai_settings, screen, "Play")
            
-      # Create an instance to store game statistics and create a scoreboard.
+      # Created an instance to store game statistics and created a scoreboard.
       stats = GameStats(ai_settings)    
       sb = Scoreboard(ai_settings, screen, stats)
       # Set the background color.
       bg_color = (230, 230, 230) 
          
-      # Make a ship.
+      # Made a ship.
       ship = Ship(ai_settings, screen)
-      # Make a group to store bullets in.
+      # Made a group to store bullets in.
       bullets = Group()     
-      # Make a group of aliens.
+      # Made a group of aliens.
       aliens = Group()
-      # Create the fleet of aliens.
+      # Created the fleet of aliens.
       gf.create_fleet(ai_settings, screen, ship, aliens)
            
       
